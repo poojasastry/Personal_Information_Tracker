@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Personal Information</string>
+
+    <string name="firstNameLabel">First Name</string>
+    <string name="lastNameLabel">Last Name</string>
+    <string name="ageLabel">Age</string>
+    <string name="emailLabel">Email</string>
+    <string name="phoneLabel">Phone</string>
+    <string name="majorLabel">Major</string>
+    <string name="majorButtonLabel">Set Major</string>
+    <string name="majorHint">Selected Major</string>
+    <string name="submitButtonLabel">Submit</string>
+    <string name="clearButtonLabel">Clear All</string>
+    <string name="backButtonLabel">Back</string>
+    <string name="doneButtonLabel">Done</string>
+    <string name="cancelButtonLabel">Cancel</string>
+
+    <string name="firstNameEmptyError">Please enter your First Name.</string>
+    <string name="firstNameWrongError">Please enter a valid First Name containing only letters.</string>
+    <string name="lastNameEmptyError">Please enter your Last Name.</string>
+    <string name="lastNameWrongError">Please enter a valid Last Name containing only letters.</string>
+    <string name="ageEmptyError">Please enter your Age.</string>
+    <string name="ageWrongError">Please enter a valid Age.</string>
+    <string name="emailEmptyError">Please enter your Email Address.</string>
+    <string name="emailWrongError">Please enter a valid Email Address of the form abc@xyz.com.</string>
+    <string name="phoneEmptyError">Please enter your Phone Number.</string>
+    <string name="phoneWrongError">Please enter a valid Phone Number.</string>
+    <string name="majorEmptyError">Please select a Major.</string>
+
+    <string name="submitSuccess">Personal information saved.</string>
+
+</resources>

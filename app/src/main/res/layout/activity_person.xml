@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pooja.assignment2.personalinformation.PersonActivity">
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/firstNameLabel"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/firstNameLabel"
+        android:hint="@string/firstNameLabel"
+        android:inputType="textPersonName|textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/lastNameLabel"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstNameLabel"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/lastNameLabel"
+        android:hint="@string/lastNameLabel"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/firstName"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/lastNameLabel"
+        android:text="@string/ageLabel"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastNameLabel"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ageLabel"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/ageLabel"
+        android:inputType="numberDecimal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lastName"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/ageLabel"
+        android:text="@string/emailLabel"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageLabel"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/emailLabel"
+        android:layout_below = "@+id/age"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        android:hint="@string/emailLabel"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/emailLabel"
+        android:text="@string/phoneLabel"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLabel"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/phoneLabel"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below = "@+id/email"
+        android:hint="@string/phoneLabel"
+        android:inputType="phone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+
+    <TextView
+        android:id="@+id/majorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/phoneLabel"
+        android:text="@string/majorLabel"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneLabel" />
+
+    <Button
+        android:id="@+id/setMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/majorLabel"
+        android:onClick="showDegreeActivity"
+        android:text="@string/majorButtonLabel"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setMajor"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/major"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/editTextBackground"
+        android:hint="@string/majorHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintTop_toBottomOf="@id/setMajor"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitButtonLabel"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@id/clear"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/major"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearButtonLabel"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/submit"
+        app:layout_constraintTop_toBottomOf="@id/major"/>
+
+</android.support.constraint.ConstraintLayout>
+
